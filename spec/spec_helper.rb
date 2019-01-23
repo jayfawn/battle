@@ -4,7 +4,9 @@ ENV['RACK_ENV'] = 'test'
 
 # require our Sinatra app file
 
-require File.expand_path '../../app.rb', __FILE__
+require_relative '../app'
+require_relative './features/web_helpers'
+
 
 require 'capybara'
 require 'capybara/rspec'

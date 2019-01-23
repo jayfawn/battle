@@ -1,7 +1,18 @@
-<h1>Welcome to the battle<h1>
-
-<% if @name1 %>
-<h2>Player 1 is: <%= @name1 %></h1>
-<br>
-<h2>Player 2 is: <%= @name2 %></h1>
-<%end%>
+<body>
+<div>
+<h1 style="color:blue;text-align:center">Welcome to the battle!</h1>
+<h3 style="color:red;text-align:center">Join <%= @player1 %> in an epic journey against their nemesis: <%= @player2 %></h3>
+</div>
+<div style="float:left" width="300">
+<section class="Player-one-items">
+  <p align ="left"><%= @player1 %> Hit points left: 100</p>
+  <img style='border: 3px dashed blue' src='https://cdn3.iconfinder.com/data/icons/generic-05/100/less_Is_More_V1.0-10-512.png' width="200" height="150">
+  </section>
+</div>
+<div style="float:right" width="300">
+<section class="Player-two-items">
+  <p  align ="right"><%= @player2 %> Hit points left: 100</p>
+<img style='border: 3px dashed blue' src='https://www.publicdomainpictures.net/pictures/150000/velka/stick-man-i.jpg' width="200" height="150">
+</section>
+</body>
+</div>
